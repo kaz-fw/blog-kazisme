@@ -1,0 +1,4 @@
+src/registerServiceWorker.js
+src/**/__tests__/**
+gatsby-config.js
+src/types/*

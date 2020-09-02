@@ -1,0 +1,36 @@
+---
+title: ソースコードをきれいに載せる
+date: 2019-07-01
+published: true
+---
+## プログラム例
+このプロジェクトの`src/pages/index.tsx`コードです。
+```tsx
+...
+type Props = {
+  data: Site_Metadata_QueryQuery;
+};
+
+const App: React.FC<Props> = ({ data }) => {
+  return (
+    <Layout>
+      <IndexWrapper className="posts">
+        {/* <Dump data={data}></Dump> */}
+        {data.allMdx.nodes.map(({ id, excerpt, frontmatter, fields }) => (
+          <PostWrapper key={id}>
+            <Link to={fields.slug}>
+              {frontmatter.cover ? <Image sizes={frontmatter.cover.childImageSharp.sizes} /> : null}
+              <h3 className="post-title">{frontmatter.title}</h3>
+              <p className="post-written-by">{frontmatter.date}</p>
+              <p className="post-description">{excerpt}</p>
+            </Link>
+          </PostWrapper>
+        ))}
+      </IndexWrapper>
+    </Layout>
+  );
+};
+
+export default App;
+...
+```

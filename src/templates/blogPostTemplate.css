@@ -1,0 +1,12 @@
+/* blogPostTemplate.css */
+.blogPostTemplate .blogPostTemplate-title {
+    margin: 80px 0 24px;
+  }
+
+  .blogPostTemplate .blogPostTemplate-posted-by {
+    font-size: 1.2em;
+  }
+
+  .blogPostTemplate a {
+    color: #000000;
+  }

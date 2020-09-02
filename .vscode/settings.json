@@ -1,0 +1,33 @@
+{
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "editor.formatOnSave": false,
+    "javascript.format.enable": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.tslint": true,
+      "source.fixAll.stylelint": true
+    },
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.md": "mdx"
+  },
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+  ],
+  "prettier.eslintIntegration": true,
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "markdown-preview-enhanced.enableScriptExecution": true,
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "markdown.preview.breaks": true,
+  "markdown.extension.orderedList.marker": "one",
+  "markdown.extension.orderedList.autoRenumber": false,
+  "markdown.extension.syntax.decorations": false,
+  "markdown.extension.tableFormatter.enabled": false,
+}
